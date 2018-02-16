@@ -162,7 +162,9 @@ namespace ModuleExtractor
             cumulativeName += tlkTableEntry;
             name = tlkTableEntry;
 
-            Directory.CreateDirectory(Path.Combine(outPath, cumulativeName));
+            string currentPath = Path.Combine(outPath, cumulativeName);
+            Directory.CreateDirectory(currentPath);
+            File.Create(Path.Combine(currentPath, ".keep"));
 
             string formattedLine = strref.ToString();
 
