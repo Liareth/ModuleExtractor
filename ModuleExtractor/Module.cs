@@ -278,8 +278,6 @@ namespace ModuleExtractor
                     return false;
                 }
 
-                File.WriteAllText("D:\\" + Path.GetFileName(file) + ".json", JToken.Parse(File.ReadAllText(fulLPathToItpJson)).ToString());
-
                 using (var streamReader = new StreamReader(fulLPathToItpJson))
                 {
                     JsonTextReader reader = new JsonTextReader(streamReader);
