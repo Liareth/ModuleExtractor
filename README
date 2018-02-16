@@ -1,0 +1,5 @@
+This program takes a module file and decomposes it in a format suitable for building using CI with a custom palette.
+
+Will probably only work on Windows. Requires VS2017.
+
+Requires https://github.com/niv/neverwinter.nim on the PATH.
